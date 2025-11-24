@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #3b2f2f;
+  padding: 12px 35px;
+}
+
+.logo img {
+  height: 55px;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+  color: white;
+  font-size: 16px;
+}
+
+.menu-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background: white;
+  color: black;
+  padding: 10px;
+  min-width: 180px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+}
+
+.dropdown p {
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.dropdown p:hover {
+  background: #f0f0f0;
+}
+
+.nested {
+  position: relative;
+  cursor: pointer;
+}
+
+.nested-menu {
+  position: absolute;
+  top: 0;
+  left: 180px;
+}
+.header a {
+  color: white;            
+  text-decoration: none;
+}
+
+.header a:visited {
+  color: white;              
+}
+.header a:hover {
+  color: #f2b37a;            
+}
+
