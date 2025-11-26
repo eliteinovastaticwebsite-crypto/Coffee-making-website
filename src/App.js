@@ -8,6 +8,7 @@ import AutomaticMachines from "./pages/AutomaticMachines";
 import SemiAutomaticMachines from "./pages/SemiAutomaticMachines";
 import HomeMachines from "./pages/HomeMachines";
 import ManufacturingPage from "./pages/Manufacturing";
+import FactoryPage from "./pages/FactoryPage"; // Import the new Factory page
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -24,7 +25,12 @@ export default function App() {
           <Route path="/semi-automatic-machines" element={<SemiAutomaticMachines />} />
           <Route path="/home-machines" element={<HomeMachines />} />
 
+          {/* Both Manufacturing and Factory routes */}
           <Route path="/manufacturing" element={<ManufacturingPage />} />
+          <Route path="/factory" element={<FactoryPage />} />
+          
+          {/* Or use the same component for both routes */}
+          {/* <Route path="/factory" element={<ManufacturingPage />} /> */}
 
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>

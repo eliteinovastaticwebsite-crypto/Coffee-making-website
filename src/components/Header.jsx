@@ -117,7 +117,7 @@ const Header = () => {
 
           {openMenu === "manufacturing" && (
             <div className="dropdown">
-              <p>Our Factory</p>
+              <Link to="/factory">Our Factory</Link>
               <p>Research & Development</p>
             </div>
           )}
