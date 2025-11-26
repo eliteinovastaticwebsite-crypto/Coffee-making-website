@@ -91,15 +91,6 @@ const CoffeeMachinesPage = () => {
             <h3 className="machine-name">DRIP FILTER COFFEE MACHINE</h3>
           </div>
         </div>
-
-        {/* Availability Badge */}
-        <div className="availability-section">
-          <p className="availability-text">Available on Amazon and Flipkart.</p>
-          <div className="platform-logos">
-            <img src="/images/amazon logo.png" alt="Amazon" className="logo" />
-            <img src="/images/flipkart logo.png" alt="Flipkart" className="logo" />
-          </div>
-        </div>
       </section>
 
       {/* Contact Section */}

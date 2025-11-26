@@ -1,0 +1,630 @@
+/* ---------------- MANUFACTURING PAGE ---------------- */
+.manufacturing-page {
+  background-color: #3b2f2f;
+  color: #e6e6e6;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+/* ---------------- HERO SECTION ---------------- */
+.manufacturing-hero {
+  position: relative;
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('manu-bg.jpg') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.manufacturing-hero h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #e6d5c5;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-align: center;
+}
+
+/* ---------------- ABOUT SECTION (Image + Text) ---------------- */
+.about-section {
+  padding: 80px 5%;
+  background-color: #0d0d0d;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-images img {
+  width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.about-content h2 {
+  font-size: 28px;
+  color: #d4a45a;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.about-content ul li {
+  color: #d4b896;
+  font-size: 16px;
+  line-height: 2;
+  padding-left: 25px;
+  position: relative;
+}
+
+.about-content ul li::before {
+  content: "•";
+  color: #d4a45a;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.learn-more-btn {
+  background-color: #d4a45a;
+  color: #111;
+  padding: 12px 35px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.learn-more-btn:hover {
+  background-color: #b98939;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 164, 90, 0.4);
+}
+
+.about-tagline {
+  font-size: 20px;
+  color: #d4b896;
+  margin-top: 30px;
+  font-style: italic;
+}
+
+/* ---------------- ROASTING PLANT SECTION ---------------- */
+.roasting-plant-section {
+  padding: 80px 5%;
+  background-color: #2a2020;
+}
+
+.roasting-plant-section h2 {
+  font-size: 36px;
+  color: #d4b896;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.roasting-plant-section p {
+  text-align: center;
+  color: #d4b896;
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  line-height: 1.8;
+}
+
+.plant-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.plant-info {
+  background-color: #d4b896;
+  padding: 50px;
+  border-radius: 12px;
+}
+
+.plant-info h3 {
+  font-size: 32px;
+  color: #3b2f2f;
+  margin-bottom: 30px;
+}
+
+.plant-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plant-info ul li {
+  color: #3b2f2f;
+  font-size: 15px;
+  line-height: 1.9;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.plant-info ul li::before {
+  content: "▸";
+  color: #8b6f47;
+  position: absolute;
+  left: 0;
+}
+
+.plant-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ---------------- KEY ATTRIBUTES SECTION ---------------- */
+.key-attributes-section {
+  padding: 80px 5%;
+  background-color: #f5f5f5;
+}
+
+.key-attributes-section h2 {
+  font-size: 36px;
+  color: #3b2f2f;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.attributes-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.attribute-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.attribute-image {
+  width: 800px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.attribute-content {
+  background-color: #d4b896;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.attribute-content h3 {
+  font-size: 24px;
+  color: #3b2f2f;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.attribute-content p {
+  color: #3b2f2f;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Red Section */
+.red-section {
+  background-color: #db7b70;
+  padding: 80px 5%;
+}
+
+.red-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.red-content h3 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.red-content p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.red-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.red-images img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ---------------- COFFEE BEAN SELECTION SECTION ---------------- */
+.bean-selection-section {
+  padding: 80px 5%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url('manu-bg.jpg') center/cover;
+}
+
+.bean-selection-section h2 {
+  font-size: 36px;
+  color: #d4b896;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.bean-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.bean-item {
+  text-align: center;
+}
+
+.bean-item img {
+  width: 100%;
+  height: 300px;
+  max-width: 400px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.bean-item h3 {
+  font-size: 28px;
+  color: #d4b896;
+  margin-bottom: 20px;
+}
+
+.bean-item ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.bean-item ul li {
+  color: #d4b896;
+  font-size: 15px;
+  line-height: 2;
+  padding-left: 20px;
+  position: relative;
+}
+
+.bean-item ul li::before {
+  content: "•";
+  color: #d4a45a;
+  position: absolute;
+  left: 0;
+}
+
+/* ---------------- SPECIFICATIONS GRID ---------------- */
+.specifications-section {
+  padding: 80px 5%;
+  background-color: #f5f5f5;
+}
+
+.specs-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.spec-card {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.spec-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.spec-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #3b2f2f;
+}
+
+.spec-card h4 {
+  font-size: 16px;
+  color: #3b2f2f;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.spec-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ---------------- FOOTER (SAME AS BEFORE) ---------------- */
+.footer-section {
+  background: linear-gradient(rgba(30, 20, 20, 0.92), rgba(30, 20, 20, 0.92)), 
+              url('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=1600') center/cover;
+  padding: 80px 5% 30px;
+  color: white;
+  width: 100%;
+  position: relative;
+  margin-top: 0;
+}
+
+.footer-overlay {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  gap: 60px;
+  align-items: start;
+  margin-bottom: 50px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  color: #d4b896;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  background: rgba(212, 164, 90, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d4a45a;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-size: 18px;
+}
+
+.social-icons a:hover {
+  background: #d4a45a;
+  color: #1e1414;
+  transform: translateY(-3px);
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.footer-column h4 {
+  font-size: 17px;
+  margin-bottom: 20px;
+  color: #d4a45a;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  border-bottom: 2px solid rgba(212, 164, 90, 0.3);
+  padding-bottom: 10px;
+}
+
+.footer-column p,
+.footer-column a {
+  display: block;
+  margin: 12px 0;
+  color: #d4b896;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+.footer-column p:hover,
+.footer-column a:hover {
+  color: #d4a45a;
+  padding-left: 8px;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-cup {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 8px 30px rgba(212, 164, 90, 0.4);
+  border: 4px solid rgba(212, 164, 90, 0.3);
+  transition: 0.3s ease;
+}
+
+.footer-cup:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(212, 164, 90, 0.6);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid rgba(212, 164, 90, 0.2);
+  font-size: 14px;
+  color: #d4b896;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-bottom-links a {
+  color: #d4b896;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: #d4a45a;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 1024px) {
+  .about-container,
+  .plant-container,
+  .bean-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .red-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .specs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-overlay {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+  
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-left {
+    align-items: center;
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .manufacturing-hero h1 {
+    font-size: 36px;
+    letter-spacing: 4px;
+  }
+  
+  .attributes-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .attribute-item {
+    grid-template-columns: 1fr;
+  }
+  
+  .red-images {
+    grid-template-columns: 1fr;
+  }
+  
+  .specs-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section,
+  .roasting-plant-section,
+  .key-attributes-section,
+  .bean-selection-section,
+  .specifications-section {
+    padding: 50px 5%;
+  }
+  
+  .plant-info,
+  .attribute-content {
+    padding: 30px;
+  }
+}

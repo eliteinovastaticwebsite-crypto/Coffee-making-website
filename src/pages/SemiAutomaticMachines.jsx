@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './AutomaticMachinesPage.css';
+import './SemiAutomatic.css';
 
 const CoffeeMachinesPage = () => {
   const [formData, setFormData] = useState({
@@ -25,13 +25,13 @@ const CoffeeMachinesPage = () => {
       
       {/* Automatic Machines Section */}
       <section className="automatic-machines-section">
-        <h1 className="page-title">AUTOMATIC MACHINES</h1>
+        <h1 className="page-title">SEMI AUTOMATIC MACHINES</h1>
         <p className="subtitle">Bean to Cup Machines</p>
 
         <div className="machines-grid">
           <div className="machine-item">
             <div className="machine-image-box">
-              <img src="/images/mach1.png" alt="Espresso Machine" />
+              <img src="/images/s1.png" alt="Espresso Machine" />
               <div className="machine-back">
             <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
             <button className="order-btn">Order Now</button>
@@ -42,7 +42,29 @@ const CoffeeMachinesPage = () => {
 
           <div className="machine-item">
             <div className="machine-image-box">
-              <img src="/images/mach2.png" alt="Filter Coffee Machine" />
+              <img src="/images/s2.png" alt="Filter Coffee Machine" />
+              <div className="machine-back">
+            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <button className="order-btn">Order Now</button>
+            </div>
+            </div>
+            <h3 className="machine-name">FILTER COFFEE MACHINE</h3>
+          </div>
+        
+        <div className="machine-item">
+            <div className="machine-image-box">
+              <img src="/images/s3.png" alt="Filter Coffee Machine" />
+              <div className="machine-back">
+            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <button className="order-btn">Order Now</button>
+            </div>
+            </div>
+
+            <h3 className="machine-name">FILTER COFFEE MACHINE</h3>
+          </div>
+          <div className="machine-item">
+            <div className="machine-image-box">
+              <img src="/images/s4.png" alt="Filter Coffee Machine" />
               <div className="machine-back">
             <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
             <button className="order-btn">Order Now</button>
@@ -53,7 +75,7 @@ const CoffeeMachinesPage = () => {
 
           <div className="machine-item">
             <div className="machine-image-box">
-              <img src="/images/mach4.png" alt="Coffee Vending Machine" />
+              <img src="/images/s5.png" alt="Coffee Vending Machine" />
               <div className="machine-back">
             <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
             <button className="order-btn">Order Now</button>
@@ -64,43 +86,7 @@ const CoffeeMachinesPage = () => {
         </div>
       </section>
 
-      {/* Powder to Cup Machines Section */}
-      <section className="powder-machines-section">
-        <h2 className="section-title-large">Powder to Cup Machines</h2>
 
-        <div className="powder-grid">
-          <div className="machine-item">
-            <div className="machine-image-box">
-              <img src="/images/mach3.png" alt="Capsule Coffee Machine" />
-              <div className="machine-back">
-            <p className="machine-desc">Convenient powder-based coffee machines that deliver quick, consistent servings with minimal effort.Perfect for offices, small cafés, and homes needing fast, reliable, no-skill coffee preparation.</p>
-            <button className="order-btn">Order Now</button>
-            </div>
-            </div>
-            <h3 className="machine-name">CAPSULE COFFEE MACHINE</h3>
-          </div>
-
-          <div className="machine-item">
-            <div className="machine-image-box">
-              <img src="/images/mach5.png" alt="Drip Filter Coffee Machine" />
-              <div className="machine-back">
-            <p className="machine-desc">Convenient powder-based coffee machines that deliver quick, consistent servings with minimal effort.Perfect for offices, small cafés, and homes needing fast, reliable, no-skill coffee preparation.</p>
-            <button className="order-btn">Order Now</button>
-            </div>
-            </div>
-            <h3 className="machine-name">DRIP FILTER COFFEE MACHINE</h3>
-          </div>
-        </div>
-
-        {/* Availability Badge */}
-        <div className="availability-section">
-          <p className="availability-text">Available on Amazon and Flipkart.</p>
-          <div className="platform-logos">
-            <img src="/images/amazon logo.png" alt="Amazon" className="logo" />
-            <img src="/images/flipkart logo.png" alt="Flipkart" className="logo" />
-          </div>
-        </div>
-      </section>
 
       {/* Contact Section */}
       <section className="contact-section">

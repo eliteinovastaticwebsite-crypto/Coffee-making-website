@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
@@ -7,32 +7,31 @@ import ContactUs from "./pages/ContactUs";
 import AutomaticMachines from "./pages/AutomaticMachines";
 import SemiAutomaticMachines from "./pages/SemiAutomaticMachines";
 import HomeMachines from "./pages/HomeMachines";
+import ManufacturingPage from "./pages/Manufacturing";
 import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <Router>
-      <div className="site">
-        <Header />
+    <div className="site">
+      <Header />
 
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/products" element={<Products />} />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
 
-            {/* subcategory pages */}
-            <Route path="/automatic-machines" element={<AutomaticMachines />} />
-            <Route path="/semi-automatic-machines" element={<SemiAutomaticMachines />} />
-            <Route path="/home-machines" element={<HomeMachines />} />
+          <Route path="/automatic-machines" element={<AutomaticMachines />} />
+          <Route path="/semi-automatic-machines" element={<SemiAutomaticMachines />} />
+          <Route path="/home-machines" element={<HomeMachines />} />
 
-            {/* contact page */}
-            <Route path="/contact-us" element={<ContactUs />} />
-          </Routes>
-        </main>
+          <Route path="/manufacturing" element={<ManufacturingPage />} />
 
-        <Footer />
-      </div>
-    </Router>
+          <Route path="/contact-us" element={<ContactUs />} />
+        </Routes>
+      </main>
+
+      <Footer />
+    </div>
   );
 }
 

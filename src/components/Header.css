@@ -26,67 +26,96 @@
   gap: 5px;
 }
 
-/* ---------------- MAIN DROPDOWN — FULLY MERGED ---------------- */
+/* ---------------- MAIN DROPDOWN — LIGHT BACKGROUND ---------------- */
 .dropdown {
   position: absolute;
   top: 45px;
   left: 0;
-  background: #3b2f2f;   /* EXACT header background */
+  background: #ffffff !important;   /* WHITE background */
   padding: 10px 0;
   min-width: 240px;
   border-radius: 0;
-  box-shadow: none;       /* fully blended */
-  opacity: 1;
-  visibility: visible;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 1 !important;
+  visibility: visible !important;
   pointer-events: auto;
   z-index: 1000;
 }
 
 .dropdown p,
-.dropdown a {
-  padding: 10px 20px;
-  color: #ffe4c7;         /* warm light text for contrast */
-  font-weight: 600;
-  text-decoration: none;
-  display: block;
-  white-space: nowrap;
+.dropdown a,
+.dropdown > *,
+.dropdown [class*="item"],
+.dropdown [class*="link"] {
+  padding: 10px 20px !important;
+  color: #1a1a1a !important;       /* VERY DARK text */
+  background: transparent !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  display: block !important;
+  white-space: nowrap !important;
+  opacity: 1 !important;            /* FORCE visibility */
+  visibility: visible !important;
 }
 
 .dropdown a:hover,
-.dropdown p:hover {
-  background: rgba(0, 0, 0, 0.25);  /* DARK hover, not white */
+.dropdown p:hover,
+.dropdown > *:hover,
+.dropdown [class*="item"]:hover,
+.dropdown [class*="link"]:hover {
+  background: #d4a574 !important;  /* golden hover */
+  color: #ffffff !important;        /* white text on hover */
 }
 
-/* ---------------- SUB MENU (ALSO FULLY MERGED) ---------------- */
-.nested {
-  padding: 12px 20px;
-  font-weight: 700;
-  color: #ffd5a1;   /* strong bold visible */
+/* ---------------- SUB MENU (LIGHT BACKGROUND) ---------------- */
+.nested,
+.dropdown .nested {
+  padding: 12px 20px !important;
+  font-weight: 700 !important;
+  color: #1a1a1a !important;       /* VERY DARK text */
+  background: transparent !important;
+  cursor: default;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
-/* nested submenu merged with header color */
+.nested:hover {
+  background: #d4a574 !important;
+  color: #ffffff !important;
+}
+
+/* nested submenu with light background */
 .nested-menu {
   position: relative;
   margin-left: 20px;
-  background: #3b2f2f;   /* SAME color to merge fully */
+  background: #ffffff !important;   /* WHITE background */
   padding: 10px 0;
-  border-left: 2px solid #a78967;  /* subtle highlight line */
-
-  opacity: 1;
-  visibility: visible;
+  border-left: 2px solid #d4a574;  /* golden accent line */
+  opacity: 1 !important;
+  visibility: visible !important;
   pointer-events: auto;
 }
 
-.nested-menu a {
-  padding: 8px 25px;
-  display: block;
-  color: #ffe8d2;       /* bright readable text */
-  font-weight: 600;
-  text-decoration: none;
+.nested-menu a,
+.nested-menu > *,
+.nested-menu [class*="item"],
+.nested-menu [class*="link"] {
+  padding: 8px 25px !important;
+  display: block !important;
+  color: #1a1a1a !important;       /* VERY DARK text */
+  background: transparent !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  opacity: 1 !important;            /* FORCE visibility */
+  visibility: visible !important;
 }
 
-.nested-menu a:hover {
-  background: rgba(0, 0, 0, 0.25); /* dark hover */
+.nested-menu a:hover,
+.nested-menu > *:hover,
+.nested-menu [class*="item"]:hover,
+.nested-menu [class*="link"]:hover {
+  background: #d4a574 !important;  /* golden hover */
+  color: #ffffff !important;        /* white text on hover */
 }
 
 /* ---------------- LINKS ---------------- */
@@ -105,9 +134,15 @@
   border: none;
   cursor: pointer;
   font-size: 14px;
-  color: #ffe4c7;
+  color: #ffffff;
 }
 
-
+/* ---------------- FORCE ALL DROPDOWN CHILDREN TO BE VISIBLE ---------------- */
+.dropdown *,
+.nested-menu * {
+  opacity: 1 !important;
+  visibility: visible !important;
+  color: inherit !important;
+}
 
 

@@ -2,7 +2,7 @@
 .product-page {
   width: 100%;
   padding: 40px 5%;
-  background-color: #0d0d0d; /* deep black */
+  background-color: #3d2c2c; /* deep black */
   font-family: "Poppins", sans-serif;
   color: #e6e6e6;
 }
@@ -344,7 +344,7 @@
 
 .hero-image img {
   width: 100%;
-  height: auto;
+  height: 500px;
   border-radius: 8px;
 }
 
@@ -396,6 +396,5 @@
     gap: 20px;
   }
 }
-
 
 

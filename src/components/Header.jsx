@@ -112,7 +112,7 @@ const Header = () => {
 
         {/* MANUFACTURING */}
         <div className="menu-item">
-          <span>Manufacturing</span>
+          <Link to="/manufacturing">Manufacturing</Link>
           <button className="arrow" onClick={(e) => toggleMain("manufacturing", e)}>▼</button>
 
           {openMenu === "manufacturing" && (
