@@ -29,6 +29,7 @@
   align-items: start;
   width: 100%;
   padding: 30px;
+  max-width: 1200px;
 }
 
 .machine-item {

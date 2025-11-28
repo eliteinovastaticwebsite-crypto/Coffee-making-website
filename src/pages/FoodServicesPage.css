@@ -1,0 +1,515 @@
+/* ---------------- FOOD SERVICES PAGE STYLES ---------------- */
+.food-services-page {
+  width: 100%;
+  background-color: #3b2f2f;
+  font-family: "Poppins", sans-serif;
+  color: #e6e6e6;
+  overflow-x: hidden;
+}
+
+/* ---------------- HERO BANNER ---------------- */
+.fs-hero-banner {
+  background: linear-gradient(to right, #b87a5c 0%, #b87a5c 55%, transparent 55%);
+  padding: 80px 5%;
+  margin: 0 auto 80px;
+  max-width: 1300px;
+  width: 1100px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.fs-banner-content h1 {
+  font-size: 52px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.fs-banner-content p {
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.fs-banner-image img {
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------------- WORLD OF COFFEE ---------------- */
+.fs-world-coffee {
+  padding: 80px 5%;
+  max-width: 1300px;
+  margin: 0 auto 80px;
+  background-color: #000;
+  border-radius: 20px;
+  width: calc(100% - 10%);
+}
+
+.fs-world-coffee h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  color: #d4a45a;
+  margin-bottom: 60px;
+  font-family: 'Playfair Display', serif;
+}
+
+.fs-world-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.fs-world-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.fs-world-text p {
+  font-size: 17px;
+  color: #d4b896;
+  line-height: 1.9;
+}
+
+/* ---------------- PRODUCTS SECTION ---------------- */
+.fs-products-section {
+  padding: 0 5%;
+  max-width: 1300px;
+  margin: 0 auto 80px;
+}
+
+.fs-products-section h2 {
+  text-align: center;
+  font-size: 52px;
+  font-weight: 700;
+  color: #d4a45a;
+  margin-bottom: 80px;
+  font-family: 'Playfair Display', serif;
+}
+
+.fs-product-category {
+  margin-bottom: 80px;
+}
+
+.fs-product-category h3 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  color: #d4a45a;
+  margin-bottom: 50px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* ---------------- FLIP CARDS GRID ---------------- */
+.fs-machines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-bottom: 50px;
+  justify-items: center;
+}
+
+.fs-machine-item {
+  perspective: 1000px;
+  width: 100%;
+  max-width: 380px;
+}
+
+.fs-machine-box {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  transform-style: preserve-3d;
+  transition: transform 0.7s ease;
+}
+
+.fs-machine-item:hover .fs-machine-box {
+  transform: rotateY(180deg);
+}
+
+/* FRONT OF CARD - BLACK */
+.fs-machine-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #000;
+  border-radius: 15px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.fs-machine-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* BACK OF CARD - BLACK WITH INFO */
+.fs-machine-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  background: #000;
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border: 1px solid #d4a45a;
+}
+
+.fs-machine-back h4 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.fs-machine-back p {
+  font-size: 15px;
+  color: #d4b896;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.fs-machine-back ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.fs-machine-back ul li {
+  font-size: 13px;
+  color: #d4b896;
+  line-height: 1.8;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.fs-machine-back ul li::before {
+  content: "•";
+  color: #d4a45a;
+  position: absolute;
+  left: 0;
+  font-size: 16px;
+}
+
+/* BUTTONS */
+.fs-enquire-btn,
+.fs-order-btn {
+  padding: 12px 30px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.fs-enquire-btn:hover,
+.fs-order-btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+.fs-machine-label {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.fs-explore-btn {
+  display: block;
+  margin: 40px auto 0;
+  padding: 15px 50px;
+  background-color: #b87a5c;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.fs-explore-btn:hover {
+  background-color: #9a6449;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(184, 122, 92, 0.4);
+}
+
+/* ---------------- EXPERIENCE SECTION ---------------- */
+.fs-experience-section {
+  padding: 80px 5%;
+  max-width: 1300px;
+  margin: 0 auto 80px;
+  background-color: #000;
+  border-radius: 20px;
+  width: calc(100% - 10%);
+}
+
+.fs-experience-content h2 {
+  font-size: 42px;
+  color: #d4a45a;
+  margin-bottom: 30px;
+  font-family: 'Playfair Display', serif;
+}
+
+.fs-experience-content p {
+  font-size: 16px;
+  color: #d4b896;
+  line-height: 1.9;
+  margin-bottom: 40px;
+}
+
+.fs-reasons-box {
+  background-color: rgba(212, 164, 90, 0.1);
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid #d4a45a;
+  margin-bottom: 40px;
+}
+
+.fs-reasons-box h3 {
+  font-size: 24px;
+  color: #d4a45a;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.fs-reasons-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fs-reasons-box ul li {
+  font-size: 15px;
+  color: #d4b896;
+  line-height: 2;
+  padding-left: 20px;
+  position: relative;
+}
+
+.fs-reasons-box ul li::before {
+  content: "•";
+  color: #d4a45a;
+  position: absolute;
+  left: 0;
+  font-size: 18px;
+}
+
+.fs-expandable-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fs-expandable-item {
+  background-color: rgba(212, 164, 90, 0.2);
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 4px solid #d4a45a;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.fs-expandable-item:hover {
+  background-color: rgba(212, 164, 90, 0.3);
+  transform: translateX(5px);
+}
+
+.fs-expandable-item h4 {
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ---------------- CONTACT SECTION ---------------- */
+.fs-contact-section {
+  padding: 80px 5%;
+  max-width: 1300px;
+  margin: 0 auto 80px;
+  text-align: center;
+  width: calc(100% - 10%);
+}
+
+.fs-contact-section h2 {
+  font-size: 42px;
+  color: #d4a45a;
+  margin-bottom: 40px;
+  font-family: 'Playfair Display', serif;
+}
+
+.fs-contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fs-contact-form input,
+.fs-contact-form textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #5a4a4a;
+  color: #fff;
+  padding: 15px 5px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease;
+}
+
+.fs-contact-form input::placeholder,
+.fs-contact-form textarea::placeholder {
+  color: #8a7a6a;
+}
+
+.fs-contact-form input:focus,
+.fs-contact-form textarea:focus {
+  border-bottom-color: #d4a45a;
+  outline: none;
+}
+
+.fs-contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.fs-submit-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+  align-self: center;
+}
+
+.fs-submit-btn:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 1024px) {
+  .fs-hero-banner {
+    grid-template-columns: 1fr;
+    background: #b87a5c;
+  }
+  
+  .fs-world-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .fs-machines-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .fs-banner-content h1 {
+    font-size: 36px;
+  }
+  
+  .fs-world-coffee h2 {
+    font-size: 36px;
+  }
+  
+  .fs-products-section h2 {
+    font-size: 38px;
+  }
+  
+  .fs-product-category h3 {
+    font-size: 30px;
+  }
+  
+  .fs-machines-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .fs-machine-box {
+    height: 380px;
+  }
+}
+
+@media (max-width: 600px) {
+  .fs-banner-content h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+  
+  .fs-banner-content p {
+    font-size: 16px;
+  }
+  
+  .fs-world-coffee h2,
+  .fs-products-section h2 {
+    font-size: 32px;
+  }
+  
+  .fs-product-category h3 {
+    font-size: 26px;
+  }
+  
+  .fs-machine-box {
+    height: 350px;
+  }
+  
+  .fs-machine-back {
+    padding: 20px;
+  }
+  
+  .fs-machine-back h4 {
+    font-size: 18px;
+  }
+  
+  .fs-experience-content h2 {
+    font-size: 32px;
+  }
+}

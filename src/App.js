@@ -15,6 +15,7 @@ import CoffeeBeans from "./pages/CoffeeBeans";
 import CoffeePowder from "./pages/CoffeePowder";
 import PourOverCoffee from "./pages/PourOverCoffee";
 import CoffeeAccessories from "./pages/CoffeeAccessories";
+import FoodServicesPage from "./pages/FoodServicesPage";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/food-services" element={<FoodServicesPage />} />
           <Route path="/products" element={<Products />} />
 
           <Route path="/automatic-machines" element={<AutomaticMachines />} />
