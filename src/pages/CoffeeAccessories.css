@@ -30,16 +30,21 @@
 .machines-grid,
 .powder-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
-  max-width: 1200px;
+  justify-content: center;
+  align-items: start;
+  max-width: 1100px;
   margin: 0 auto 60px;
+  padding: 0 20px; /* adds horizontal breathing room */
 }
 
 .machine-item {
   perspective: 1000px;
   text-align: center;
   width: 100%;
+  padding: 10px; /* adds spacing around each card */
+  box-sizing: border-box;
 }
 
 /* CARD BOX – FIXED SIZE FOR ALL CARDS */

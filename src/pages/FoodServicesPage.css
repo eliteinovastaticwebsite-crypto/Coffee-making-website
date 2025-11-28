@@ -370,6 +370,7 @@
   margin: 0 auto 80px;
   text-align: center;
   width: calc(100% - 10%);
+  background-color: #131313;
 }
 
 .fs-contact-section h2 {

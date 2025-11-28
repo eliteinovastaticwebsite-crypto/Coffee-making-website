@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './SemiAutomatic.css';
+import './CoffeeAccessories.css';
 
 const CoffeeMachinesPage = () => {
   const [formData, setFormData] = useState({

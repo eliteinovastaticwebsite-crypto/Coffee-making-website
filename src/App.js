@@ -16,6 +16,7 @@ import CoffeePowder from "./pages/CoffeePowder";
 import PourOverCoffee from "./pages/PourOverCoffee";
 import CoffeeAccessories from "./pages/CoffeeAccessories";
 import FoodServicesPage from "./pages/FoodServicesPage";
+/*import OfficeCoffee from "./pages/OfficeCoffee"; */
 
 export default function App() {
   return (
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="/coffee-powder" element={<CoffeePowder />} />
           <Route path="/pour-over-coffee" element={<PourOverCoffee />} />
           <Route path="/coffee-accessories" element={<CoffeeAccessories />} />
+          {/* <Route path="/office-coffee" element={<OfficeCoffee />} /> */}
 
           {/* Manufacturing, Factory, and R&D routes */}
           <Route path="/manufacturing" element={<ManufacturingPage />} />
