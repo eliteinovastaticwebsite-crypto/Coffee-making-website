@@ -46,10 +46,10 @@ export default function Home() {
           <a href="/contact-us" className="btn-outline">Get Quote</a>
         </div>
       </section>
-
     </div>
   );
 }
+
 
 
 

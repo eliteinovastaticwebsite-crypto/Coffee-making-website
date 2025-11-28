@@ -1,10 +1,41 @@
+/* RESET PAGE LIMITS */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* HOME PAGE WRAPPER */
+.home-page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* FULLSCREEN HERO SECTION */
+.hero-container-fullscreen {
+  position: relative;
+  width: 100vw;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
+/* HERO IMAGE */
 .hero-image {
   width: 100%;
-  height: 500px;
+  height: 100%;
   object-fit: cover;
+  display: block;
   transition: opacity 0.5s ease-in-out;
 }
 
+/* FADE EFFECT */
 .fade-in {
   opacity: 1;
 }
@@ -13,39 +44,52 @@
   opacity: 0;
 }
 
+/* INTRO SECTION BELOW HERO */
 .intro-section {
   text-align: center;
-  padding: 2rem;
+  padding: 3rem 1rem;
+  background: #f7f3ef;
 }
 
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #3b2f24;
+}
+
+.section-subtitle {
+  max-width: 650px;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  color: #5e5a57;
+}
+
+/* BUTTONS */
 .btn-container {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: 1rem;
 }
 
 .btn-primary,
 .btn-outline {
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  font-weight: bold;
+  padding: 0.8rem 1.5rem;
   border-radius: 5px;
-  transition: background 0.3s ease;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 .btn-primary {
   background-color: #6f4e37;
-  color: white;
-}
-
-.btn-primary:hover {
-  background-color: #5a3e2c;
+  color: #fff;
 }
 
 .btn-outline {
   border: 2px solid #6f4e37;
   color: #6f4e37;
+  background: transparent;
 }
 
 .btn-outline:hover {
@@ -53,12 +97,20 @@
   color: white;
 }
 
-.footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #f5f5f5;
-  font-size: 0.9rem;
-  color: #555;
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 80%;
+    text-align: center;
+  }
 }
-
-

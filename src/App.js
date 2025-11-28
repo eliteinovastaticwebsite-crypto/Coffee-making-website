@@ -16,7 +16,8 @@ import CoffeePowder from "./pages/CoffeePowder";
 import PourOverCoffee from "./pages/PourOverCoffee";
 import CoffeeAccessories from "./pages/CoffeeAccessories";
 import FoodServicesPage from "./pages/FoodServicesPage";
-/*import OfficeCoffee from "./pages/OfficeCoffee"; */
+import OfficeCoffeeSolutions from "./pages/OfficeCoffeeSolutions";
+/*import DirectToConsumerPage from "./pages/DirectToconsumerpage"; */
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/food-services" element={<FoodServicesPage />} />
           <Route path="/products" element={<Products />} />
+          {/*<Route path="/direct-to-consumer" element={<DirectToConsumerPage />} /> */}
 
           <Route path="/automatic-machines" element={<AutomaticMachines />} />
           <Route path="/semi-automatic-machines" element={<SemiAutomaticMachines />} />
@@ -36,7 +38,7 @@ export default function App() {
           <Route path="/coffee-powder" element={<CoffeePowder />} />
           <Route path="/pour-over-coffee" element={<PourOverCoffee />} />
           <Route path="/coffee-accessories" element={<CoffeeAccessories />} />
-          {/* <Route path="/office-coffee" element={<OfficeCoffee />} /> */}
+          <Route path="/coffee-solutions" element={<OfficeCoffeeSolutions />} /> 
 
           {/* Manufacturing, Factory, and R&D routes */}
           <Route path="/manufacturing" element={<ManufacturingPage />} />

@@ -87,14 +87,6 @@ const ProductPage = () => {
 
       {/* ---- HERO SECTION ---- */}
       <section className="hero-section">
-        <div className="availability-badge">
-          <p>AVAILABLE ON AMAZON AND FLIPKART.</p>
-          <div className="platform-logos">
-            <img src="/images/amazon logo.png" alt="Amazon" className="platform-logo" />
-            <img src="/images/flipkart logo.png" alt="Flipkart" className="platform-logo" />
-          </div>
-        </div>
-
         <div className="hero-content">
           <div className="hero-image">
             <img src="/images/coffee_beans.jpg" alt="Coffee Beans" />
