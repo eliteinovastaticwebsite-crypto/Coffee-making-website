@@ -58,7 +58,7 @@ const Header = () => {
           {openMenu === "business" && (
             <div className="dropdown">
               <Link to="/food-services">Food Services</Link>
-              <Link to="/coffee-solutions">Office Coffee Solutions</Link>
+              <Link to="/coffee-solutions">Office Coffee Solutions</Link> 
 
               <div className="nested" onClick={(e) => toggleSub("consumer", e)}>
               <Link to="/direct-to-consumer" className="nested-link">
@@ -67,7 +67,6 @@ const Header = () => {
               {openSubMenu === "consumer" && (
               <div className="nested-menu">
               <Link to="/public-locations">Public Locations</Link>
-              <Link to="/ecommerce">E-Commerce</Link>
                </div>
               )}
           </div>

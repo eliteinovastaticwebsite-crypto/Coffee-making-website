@@ -48,9 +48,6 @@ const OfficeCoffeeSolutions = () => {
 
       {/* -------------------- ESTABLISHED SECTION -------------------- */}
       <section className="established-section">
-        <div className="established-text">
-          <h2>Established in 2000</h2>
-        </div>
 
         <div className="established-content">
           <img
@@ -67,6 +64,9 @@ const OfficeCoffeeSolutions = () => {
             />
 
             <p className="established-para">
+              <div className="established-text">
+          <h2>Established in 2000</h2>
+        </div>
               Every office, irrespective of its size, requires coffee solutions
               to keep its crew members running through the long hours of the
               day and sometimes even the night. Office coffee solutions include

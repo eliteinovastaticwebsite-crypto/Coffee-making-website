@@ -17,7 +17,8 @@ import PourOverCoffee from "./pages/PourOverCoffee";
 import CoffeeAccessories from "./pages/CoffeeAccessories";
 import FoodServicesPage from "./pages/FoodServicesPage";
 import OfficeCoffeeSolutions from "./pages/OfficeCoffeeSolutions";
-/*import DirectToConsumerPage from "./pages/DirectToconsumerpage"; */
+import DirectToConsumer from "./pages/DirectToConsumer";
+import PublicLocation from "./pages/PublicLocation";
 
 export default function App() {
   return (
@@ -29,7 +30,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/food-services" element={<FoodServicesPage />} />
           <Route path="/products" element={<Products />} />
-          {/*<Route path="/direct-to-consumer" element={<DirectToConsumerPage />} /> */}
+          <Route path="/direct-to-consumer" element={<DirectToConsumer />} /> 
+          <Route path="/public-locations" element={<PublicLocation />} />
 
           <Route path="/automatic-machines" element={<AutomaticMachines />} />
           <Route path="/semi-automatic-machines" element={<SemiAutomaticMachines />} />
