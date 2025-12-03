@@ -20,6 +20,7 @@ import OfficeCoffeeSolutions from "./pages/OfficeCoffeeSolutions";
 import DirectToConsumer from "./pages/DirectToConsumer";
 import PublicLocation from "./pages/PublicLocation";
 import AboutUs from "./pages/AboutUs";
+import WhatWeDo from "./pages/WhatWeDo";
 
 export default function App() {
   return (
@@ -50,6 +51,7 @@ export default function App() {
 
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="what-we-do" element={<WhatWeDo />} />
 
         </Routes>
       </main>

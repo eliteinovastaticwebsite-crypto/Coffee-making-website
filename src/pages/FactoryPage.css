@@ -148,76 +148,80 @@
 }
 
 /* ---------------- CONTACT SECTION ---------------- */
-.factory-contact-section {
+.contact-section {
   padding: 80px 5%;
-  background-color: #131111;
-}
-
-.factory-contact-section h2 {
-  font-size: 36px;
-  color: #d4b896;
   text-align: center;
-  margin-bottom: 50px;
-  font-family: 'Playfair Display', serif;
+  background-color: #131313;
+  margin-top: 60px;
+  border-radius: 15px;
 }
 
-.factory-contact-form {
+.contact-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #d4a45a;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact-form {
   max-width: 600px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.factory-contact-form input,
-.factory-contact-form textarea {
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #555;
+.form-input,
+.form-textarea {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #555;
   color: #fff;
-  padding: 15px 5px;
+  padding: 15px 20px;
+  border-radius: 8px;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   transition: 0.3s ease;
 }
 
-.factory-contact-form input::placeholder,
-.factory-contact-form textarea::placeholder {
+.form-input::placeholder,
+.form-textarea::placeholder {
   color: #999;
 }
 
-.factory-contact-form input:focus,
-.factory-contact-form textarea:focus {
-  border-bottom-color: #d4a45a;
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #d4a45a;
   outline: none;
+  background: rgba(255, 255, 255, 0.08);
 }
 
-.factory-contact-form textarea {
+.form-textarea {
+  min-height: 150px;
   resize: vertical;
-  min-height: 100px;
 }
 
-.factory-submit-btn {
-  background-color: #e74c3c;
-  color: #fff;
+.submit-btn {
+  background-color: #d4a45a;
+  color: #111;
   padding: 15px 50px;
   border: none;
   border-radius: 30px;
   font-weight: 600;
-  font-size: 16px;
   cursor: pointer;
-  transition: 0.3s ease;
-  align-self: center;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  transition: 0.3s ease;
+  margin-top: 10px;
 }
 
-.factory-submit-btn:hover {
-  background-color: #c0392b;
+.submit-btn:hover {
+  background-color: #b98939;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+  box-shadow: 0 6px 20px rgba(212, 164, 90, 0.4);
 }
-
 
 /* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 1024px) {

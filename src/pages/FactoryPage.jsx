@@ -3,17 +3,30 @@ import './FactoryPage.css';
 
 const FactoryPage = () => {
   const [formData, setFormData] = useState({
-    name: '', phone: '', email: '', budget: '', location: '', message: ''
-  });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-  };
+        name: "",
+        phone: "",
+        email: "",
+        message: ""
+      });
+    
+      /* -------------------- INPUT CHANGE HANDLER -------------------- */
+      const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+      };
+    
+      /* -------------------- FORM SUBMIT -------------------- */
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log("Form Submitted:", formData);
+        alert("Form submitted successfully!");
+    
+        setFormData({
+          name: "",
+          phone: "",
+          email: "",
+          message: ""
+        });
+      };
 
   return (
     <div className="factory-page">
@@ -68,17 +81,51 @@ const FactoryPage = () => {
       </section>
 
       {/* Contact Form */}
-      <section className="factory-contact-section">
-        <h2>Contact Us</h2>
-        <div className="factory-contact-form">
-          <input type="text" name="name" placeholder="Name*" onChange={handleChange} />
-          <input type="tel" name="phone" placeholder="Phone*" onChange={handleChange} />
-          <input type="email" name="email" placeholder="Email*" onChange={handleChange} />
-          <input type="text" name="budget" placeholder="Budget*" onChange={handleChange} />
-          <input type="text" name="location" placeholder="Location*" onChange={handleChange} />
-          <textarea name="message" placeholder="Message" onChange={handleChange} rows="4"></textarea>
-          <button onClick={handleSubmit} className="factory-submit-btn">Submit</button>
-        </div>
+     <section className="contact-section">
+        <h2 className="contact-title">Contact Us</h2>
+
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Name*"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            className="form-input"
+          />
+
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone*"
+            value={formData.phone}
+            onChange={handleChange}
+            required
+            className="form-input"
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Email*"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className="form-input"
+          />
+
+          <textarea
+            name="message"
+            placeholder="Message"
+            value={formData.message}
+            onChange={handleChange}
+            rows="4"
+            className="form-input form-textarea"
+          ></textarea>
+
+          <button type="submit" className="submit-btn">Submit</button>
+        </form>
       </section>
     </div>
   );

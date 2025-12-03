@@ -364,61 +364,63 @@
 }
 
 /* ---------------- CONTACT SECTION ---------------- */
-.fs-contact-section {
+.contact-section {
   padding: 80px 5%;
-  max-width: 1300px;
-  margin: 0 auto 80px;
   text-align: center;
-  width: calc(100% - 10%);
   background-color: #131313;
+  margin-top: 60px;
+  border-radius: 15px;
 }
 
-.fs-contact-section h2 {
-  font-size: 42px;
+.contact-title {
+  font-size: 36px;
+  font-weight: 700;
   color: #d4a45a;
-  margin-bottom: 40px;
-  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.fs-contact-form {
+.contact-form {
   max-width: 600px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.fs-contact-form input,
-.fs-contact-form textarea {
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #5a4a4a;
+.form-input,
+.form-textarea {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #555;
   color: #fff;
-  padding: 15px 5px;
+  padding: 15px 20px;
+  border-radius: 8px;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   transition: 0.3s ease;
 }
 
-.fs-contact-form input::placeholder,
-.fs-contact-form textarea::placeholder {
-  color: #8a7a6a;
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #999;
 }
 
-.fs-contact-form input:focus,
-.fs-contact-form textarea:focus {
-  border-bottom-color: #d4a45a;
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #d4a45a;
   outline: none;
+  background: rgba(255, 255, 255, 0.08);
 }
 
-.fs-contact-form textarea {
+.form-textarea {
+  min-height: 150px;
   resize: vertical;
-  min-height: 100px;
 }
 
-.fs-submit-btn {
-  background-color: #e74c3c;
-  color: #fff;
+.submit-btn {
+  background-color: #d4a45a;
+  color: #111;
   padding: 15px 50px;
   border: none;
   border-radius: 30px;
@@ -428,13 +430,13 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: 0.3s ease;
-  align-self: center;
+  margin-top: 10px;
 }
 
-.fs-submit-btn:hover {
-  background-color: #c0392b;
+.submit-btn:hover {
+  background-color: #b98939;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+  box-shadow: 0 6px 20px rgba(212, 164, 90, 0.4);
 }
 
 /* ---------------- RESPONSIVE ---------------- */

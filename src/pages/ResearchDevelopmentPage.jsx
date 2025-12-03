@@ -21,6 +21,14 @@ const ResearchDevelopmentPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
+    alert("Form submitted successfully!");
+
+    setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        message: ""
+      });
   };
 
   return (
@@ -86,53 +94,51 @@ const ResearchDevelopmentPage = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section className="rd-contact-section">
-        <h2>Contact Us</h2>
-        <div className="rd-contact-form">
+      <section className="contact-section">
+        <h2 className="contact-title">Contact Us</h2>
+
+        <form className="contact-form" onSubmit={handleSubmit}>
           <input
             type="text"
             name="name"
             placeholder="Name*"
             value={formData.name}
             onChange={handleChange}
+            required
+            className="form-input"
           />
+
           <input
             type="tel"
             name="phone"
             placeholder="Phone*"
             value={formData.phone}
             onChange={handleChange}
+            required
+            className="form-input"
           />
+
           <input
             type="email"
             name="email"
             placeholder="Email*"
             value={formData.email}
             onChange={handleChange}
+            required
+            className="form-input"
           />
-          <input
-            type="text"
-            name="budget"
-            placeholder="Budget*"
-            value={formData.budget}
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            name="location"
-            placeholder="Location*"
-            value={formData.location}
-            onChange={handleChange}
-          />
+
           <textarea
             name="message"
             placeholder="Message"
             value={formData.message}
             onChange={handleChange}
             rows="4"
+            className="form-input form-textarea"
           ></textarea>
-          <button onClick={handleSubmit} className="rd-submit-btn">Submit</button>
-        </div>
+
+          <button type="submit" className="submit-btn">Submit</button>
+        </form>
       </section>
 
     </div>

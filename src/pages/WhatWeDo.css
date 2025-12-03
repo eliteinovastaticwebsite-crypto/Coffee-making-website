@@ -1,0 +1,513 @@
+/* WhatWeDo.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #251919;
+  color: #fff;
+}
+
+.what-we-do-container {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #000000;
+}
+
+/* Hero Section */
+.what-hero-section {
+  background: linear-gradient(135deg, #b8735e 0%, #9d6b53 100%);
+  padding: 60px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  min-height: 280px;
+  height: 500px;
+}
+
+.what-hero-content {
+  max-width: 500px;
+  flex: 1;
+}
+
+.what-hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.hero-tagline {
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.what-hero-image {
+  width: 400px;
+  height: 230px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.what-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Main Title Section */
+.main-title-section {
+  padding: 80px 40px 60px;
+  text-align: center;
+  background-color: #130e0e;
+}
+
+.main-title-section h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: #d4af37;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Content Sections */
+.content-section {
+  padding: 60px 40px;
+  background-color: #272222;
+}
+
+.content-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.content-section.reverse .content-block {
+  flex-direction: row-reverse;
+}
+
+.content-block.full-width {
+  flex-direction: column;
+  text-align: center;
+}
+
+.content-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.content-text h3 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #d4af37;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+}
+
+.content-text p {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #ccc;
+  text-align: justify;
+}
+
+.content-image {
+  width: 500px;
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
+}
+
+.content-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Brewing Since 1996 Section */
+.brewing-section {
+  padding: 80px 40px;
+  background-color: #181515;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.brewing-images {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 600px;
+}
+
+.small-brewing-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.small-brewing-images img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.medium-brewing-image {
+  width: 350px;
+  height: 320px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.medium-brewing-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.brewing-content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.brewing-hero-box {
+  position: relative;
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.brewing-hero-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.brewing-hero-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(34, 29, 29, 0.85) 0%, rgba(0, 0, 0, 0.2) 100%);
+  z-index: 2;
+}
+
+.brewing-hero-box h2 {
+  position: relative;
+  z-index: 3;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Team Section */
+.team-section {
+  padding: 60px 40px;
+  background-color: #1f1b1b;
+}
+
+.team-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.team-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.team-text h3 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #d4af37;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+}
+
+.team-text p {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #ccc;
+  text-align: justify;
+}
+
+.team-image {
+  width: 500px;
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
+}
+
+.team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Fresh & Honest Section */
+.coffee-love-section {
+  padding: 60px 40px;
+  background-color: #1b1515;
+  text-align: center;
+}
+
+.coffee-love-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.coffee-love-content h3 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #d4af37;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+}
+
+.coffee-love-content p {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #ccc;
+  text-align: justify;
+}
+
+/* South India Section */
+.south-india-section {
+  padding: 60px 40px 100px;
+  background-color: #1b1616;
+}
+
+.south-india-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.south-india-image {
+  width: 450px;
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
+}
+
+.south-india-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.south-india-text {
+  flex: 1;
+  max-width: 700px;
+}
+
+.south-india-text h3 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #d4af37;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+}
+
+.south-india-text p {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #ccc;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .what-hero-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .what-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .what-hero-image {
+    width: 100%;
+    max-width: 400px;
+    height: 220px;
+  }
+
+  .main-title-section h2 {
+    font-size: 2rem;
+  }
+
+  .content-section {
+    padding: 40px 20px;
+  }
+
+  .content-text h3,
+  .team-text h3,
+  .fresh-honest-content h3,
+  .south-india-text h3 {
+    font-size: 1.8rem;
+  }
+
+  .content-image,
+  .team-image {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+  }
+
+  .brewing-section {
+    padding: 60px 20px;
+  }
+
+  .brewing-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .small-brewing-images {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .small-brewing-images img {
+    width: 170px;
+    height: 130px;
+  }
+
+  .medium-brewing-image {
+    width: 100%;
+    max-width: 350px;
+    height: 280px;
+  }
+
+  .brewing-hero-box {
+    height: 350px;
+  }
+
+  .brewing-hero-box h2 {
+    font-size: 2.2rem;
+  }
+
+  .south-india-image {
+    width: 100%;
+    max-width: 400px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 480px) {
+  .what-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-tagline {
+    font-size: 0.9rem;
+  }
+
+  .main-title-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .content-text h3,
+  .team-text h3,
+  .fresh-honest-content h3,
+  .south-india-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .small-brewing-images {
+    flex-direction: column;
+  }
+
+  .small-brewing-images img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .brewing-hero-box h2 {
+    font-size: 1.8rem;
+  }
+}
