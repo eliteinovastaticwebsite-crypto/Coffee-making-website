@@ -5,13 +5,14 @@ import "./Header.css";
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(null);
   const [openSubMenu, setOpenSubMenu] = useState(null);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false); // NEW
 
   // Close dropdown on outside click
   useEffect(() => {
     const handleClickOutside = () => {
       setOpenMenu(null);
       setOpenSubMenu(null);
+      setMobileMenuOpen(false);
     };
     document.addEventListener("click", handleClickOutside);
     return () => document.removeEventListener("click", handleClickOutside);
@@ -41,14 +42,14 @@ const Header = () => {
         </Link>
       </div>
 
-      {/* Hamburger Icon (Mobile) */}
+      {/* ✅ HAMBURGER ICON */}
       <div className="hamburger" onClick={toggleMobileMenu}>
-        <span></span>
-        <span></span>
-        <span></span>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
 
-      {/* Nav */}
+      {/* ✅ NAVIGATION */}
       <nav className={`nav ${mobileMenuOpen ? "active" : ""}`}>
 
         <Link to="/">Home</Link>
@@ -61,13 +62,10 @@ const Header = () => {
           {openMenu === "business" && (
             <div className="dropdown">
               <Link to="/food-services">Food Services</Link>
-              <Link to="/coffee-solutions">Office Coffee Solutions</Link> 
+              <Link to="/coffee-solutions">Office Coffee Solutions</Link>
 
               <div className="nested" onClick={(e) => toggleSub("consumer", e)}>
-                <Link to="/direct-to-consumer" className="nested-link">
-                  Direct to Consumer ›
-                </Link>
-
+                Direct to Consumer ›
                 {openSubMenu === "consumer" && (
                   <div className="nested-menu">
                     <Link to="/public-locations">Public Locations</Link>
@@ -128,7 +126,7 @@ const Header = () => {
 
         {/* CONTACT */}
         <div className="menu-item">
-          <Link to="/contact-us" className="menu-item">Contact Us</Link>
+          <Link to="/contact-us">Contact Us</Link>
           <button className="arrow" onClick={(e) => toggleMain("contact-us", e)}>▼</button>
 
           {openMenu === "contact-us" && (
