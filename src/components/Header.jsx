@@ -1,13 +1,22 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(null);
   const [openSubMenu, setOpenSubMenu] = useState(null);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false); // NEW
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Close dropdown on outside click
+  const location = useLocation();
+
+  // ✅ Close menus when route changes
+  useEffect(() => {
+    setOpenMenu(null);
+    setOpenSubMenu(null);
+    setMobileMenuOpen(false);
+  }, [location.pathname]);
+
+  // ✅ Close dropdown on outside click
   useEffect(() => {
     const handleClickOutside = () => {
       setOpenMenu(null);
@@ -34,10 +43,17 @@ const Header = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
+  // ✅ Close menu when clicking a link
+  const handleLinkClick = () => {
+    setOpenMenu(null);
+    setOpenSubMenu(null);
+    setMobileMenuOpen(false);
+  };
+
   return (
     <header className="header" onClick={(e) => e.stopPropagation()}>
       <div className="logo">
-        <Link to="/">
+        <Link to="/" onClick={handleLinkClick}>
           <img src="/logo.png" alt="Coffee Logo" />
         </Link>
       </div>
@@ -52,7 +68,7 @@ const Header = () => {
       {/* ✅ NAVIGATION */}
       <nav className={`nav ${mobileMenuOpen ? "active" : ""}`}>
 
-        <Link to="/">Home</Link>
+        <Link to="/" onClick={handleLinkClick}>Home</Link>
 
         {/* BUSINESS */}
         <div className="menu-item">
@@ -61,14 +77,14 @@ const Header = () => {
 
           {openMenu === "business" && (
             <div className="dropdown">
-              <Link to="/food-services">Food Services</Link>
-              <Link to="/coffee-solutions">Office Coffee Solutions</Link>
+              <Link to="/food-services" onClick={handleLinkClick}>Food Services</Link>
+              <Link to="/coffee-solutions" onClick={handleLinkClick}>Office Coffee Solutions</Link>
 
               <div className="nested" onClick={(e) => toggleSub("consumer", e)}>
                 Direct to Consumer ›
                 {openSubMenu === "consumer" && (
                   <div className="nested-menu">
-                    <Link to="/public-locations">Public Locations</Link>
+                    <Link to="/public-locations" onClick={handleLinkClick}>Public Locations</Link>
                   </div>
                 )}
               </div>
@@ -78,7 +94,7 @@ const Header = () => {
 
         {/* PRODUCTS */}
         <div className="menu-item">
-          <Link to="/products">Products</Link>
+          <Link to="/products" onClick={handleLinkClick}>Products</Link>
           <button className="arrow" onClick={(e) => toggleMain("products", e)}>▼</button>
 
           {openMenu === "products" && (
@@ -88,9 +104,9 @@ const Header = () => {
                 Coffee Machines ›
                 {openSubMenu === "machines" && (
                   <div className="nested-menu">
-                    <Link to="/automatic-machines">Automatic Machines</Link>
-                    <Link to="/semi-automatic-machines">Semi Automatic Machines</Link>
-                    <Link to="/home-machines">Home Machines</Link>
+                    <Link to="/automatic-machines" onClick={handleLinkClick}>Automatic Machines</Link>
+                    <Link to="/semi-automatic-machines" onClick={handleLinkClick}>Semi Automatic Machines</Link>
+                    <Link to="/home-machines" onClick={handleLinkClick}>Home Machines</Link>
                   </div>
                 )}
               </div>
@@ -99,40 +115,40 @@ const Header = () => {
                 Coffee Products ›
                 {openSubMenu === "coffee" && (
                   <div className="nested-menu">
-                    <Link to="/coffee-beans">Coffee Beans</Link>
-                    <Link to="/coffee-powder">Coffee Powder</Link>
-                    <Link to="/pour-over-coffee">Pour Over Coffee</Link>
+                    <Link to="/coffee-beans" onClick={handleLinkClick}>Coffee Beans</Link>
+                    <Link to="/coffee-powder" onClick={handleLinkClick}>Coffee Powder</Link>
+                    <Link to="/pour-over-coffee" onClick={handleLinkClick}>Pour Over Coffee</Link>
                   </div>
                 )}
               </div>
 
-              <Link to="/coffee-accessories">Coffee Accessories</Link>
+              <Link to="/coffee-accessories" onClick={handleLinkClick}>Coffee Accessories</Link>
             </div>
           )}
         </div>
 
         {/* MANUFACTURING */}
         <div className="menu-item">
-          <Link to="/manufacturing">Manufacturing</Link>
+          <Link to="/manufacturing" onClick={handleLinkClick}>Manufacturing</Link>
           <button className="arrow" onClick={(e) => toggleMain("manufacturing", e)}>▼</button>
 
           {openMenu === "manufacturing" && (
             <div className="dropdown">
-              <Link to="/factory">Our Factory</Link>
-              <Link to="/research-development">Research & Development</Link>
+              <Link to="/factory" onClick={handleLinkClick}>Our Factory</Link>
+              <Link to="/research-development" onClick={handleLinkClick}>Research & Development</Link>
             </div>
           )}
         </div>
 
         {/* CONTACT */}
         <div className="menu-item">
-          <Link to="/contact-us">Contact Us</Link>
+          <Link to="/contact-us" onClick={handleLinkClick}>Contact Us</Link>
           <button className="arrow" onClick={(e) => toggleMain("contact-us", e)}>▼</button>
 
           {openMenu === "contact-us" && (
             <div className="dropdown">
-              <Link to="/about">About Us</Link>
-              <Link to="/what-we-do">What We Do</Link>
+              <Link to="/about" onClick={handleLinkClick}>About Us</Link>
+              <Link to="/what-we-do" onClick={handleLinkClick}>What We Do</Link>
             </div>
           )}
         </div>
