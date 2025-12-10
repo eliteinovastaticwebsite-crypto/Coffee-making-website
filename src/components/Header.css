@@ -144,5 +144,77 @@
   visibility: visible !important;
   color: inherit !important;
 }
+/* ---------------- MOBILE RESPONSIVE ---------------- */
+
+@media (max-width: 768px) {
+
+  /* Stack header items */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  /* Logo resize */
+  .logo img {
+    height: 45px;
+    margin-bottom: 10px;
+  }
+
+  /* Navigation stack */
+  .nav {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .menu-item {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* Dropdown full width */
+  .dropdown {
+    position: static;
+    width: 100%;
+    min-width: 100%;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  /* Dropdown items spacing */
+  .dropdown p,
+  .dropdown a {
+    padding: 12px 15px !important;
+  }
+
+  /* Nested menu full width */
+  .nested-menu {
+    margin-left: 0;
+    border-left: none;
+    padding-left: 10px;
+  }
+
+  /* Arrow alignment */
+  .arrow {
+    margin-left: auto;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 15px;
+  }
+
+  .nav {
+    font-size: 14px;
+  }
+
+  .dropdown p,
+  .dropdown a {
+    font-size: 14px;
+  }
+}
 
 
