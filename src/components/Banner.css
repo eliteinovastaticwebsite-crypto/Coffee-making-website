@@ -45,3 +45,44 @@
 .slider-btn:hover {
   background: rgba(0,0,0,0.7);
 }
+/* ---------- MOBILE RESPONSIVE FIX (ADD BELOW YOUR CODE) ---------- */
+@media (max-width: 768px) {
+
+  .banner-container {
+    height: auto;            /* Let image decide height */
+  }
+
+  .banner-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .slider-btn {
+    font-size: 20px;
+    padding: 8px 12px;
+  }
+
+  .slider-btn.left {
+    left: 10px;
+  }
+
+  .slider-btn.right {
+    right: 10px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .banner-img {
+    height: 250px;           /* Better fit for small screens */
+    object-fit: cover;
+  }
+
+  .slider-btn {
+    font-size: 18px;
+    padding: 6px 10px;
+  }
+
+}
