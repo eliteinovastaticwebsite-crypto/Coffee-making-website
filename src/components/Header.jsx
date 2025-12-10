@@ -5,6 +5,7 @@ import "./Header.css";
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(null);
   const [openSubMenu, setOpenSubMenu] = useState(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Close dropdown on outside click
   useEffect(() => {
@@ -27,6 +28,11 @@ const Header = () => {
     setOpenSubMenu(openSubMenu === sub ? null : sub);
   };
 
+  const toggleMobileMenu = (e) => {
+    e.stopPropagation();
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   return (
     <header className="header" onClick={(e) => e.stopPropagation()}>
       <div className="logo">
@@ -35,10 +41,17 @@ const Header = () => {
         </Link>
       </div>
 
-      <nav className="nav">
+      {/* Hamburger Icon (Mobile) */}
+      <div className="hamburger" onClick={toggleMobileMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-        {/* HOME */}
-          <Link to="/">Home</Link>
+      {/* Nav */}
+      <nav className={`nav ${mobileMenuOpen ? "active" : ""}`}>
+
+        <Link to="/">Home</Link>
 
         {/* BUSINESS */}
         <div className="menu-item">
@@ -51,16 +64,16 @@ const Header = () => {
               <Link to="/coffee-solutions">Office Coffee Solutions</Link> 
 
               <div className="nested" onClick={(e) => toggleSub("consumer", e)}>
-              <Link to="/direct-to-consumer" className="nested-link">
-               Direct to Consumer ›
-               </Link>
-              {openSubMenu === "consumer" && (
-              <div className="nested-menu">
-              <Link to="/public-locations">Public Locations</Link>
-               </div>
-              )}
-          </div>
+                <Link to="/direct-to-consumer" className="nested-link">
+                  Direct to Consumer ›
+                </Link>
 
+                {openSubMenu === "consumer" && (
+                  <div className="nested-menu">
+                    <Link to="/public-locations">Public Locations</Link>
+                  </div>
+                )}
+              </div>
             </div>
           )}
         </div>
@@ -73,7 +86,6 @@ const Header = () => {
           {openMenu === "products" && (
             <div className="dropdown">
 
-              {/* Machines */}
               <div className="nested" onClick={(e) => toggleSub("machines", e)}>
                 Coffee Machines ›
                 {openSubMenu === "machines" && (
@@ -85,7 +97,6 @@ const Header = () => {
                 )}
               </div>
 
-              {/* Coffee Products */}
               <div className="nested" onClick={(e) => toggleSub("coffee", e)}>
                 Coffee Products ›
                 {openSubMenu === "coffee" && (
@@ -114,10 +125,11 @@ const Header = () => {
             </div>
           )}
         </div>
-        
+
+        {/* CONTACT */}
         <div className="menu-item">
-        <Link to="/contact-us" className="menu-item">Contact Us</Link>
-        <button className="arrow" onClick={(e) => toggleMain("contact-us", e)}>▼</button>
+          <Link to="/contact-us" className="menu-item">Contact Us</Link>
+          <button className="arrow" onClick={(e) => toggleMain("contact-us", e)}>▼</button>
 
           {openMenu === "contact-us" && (
             <div className="dropdown">
@@ -125,19 +137,11 @@ const Header = () => {
               <Link to="/what-we-do">What We Do</Link>
             </div>
           )}
-          </div>
+        </div>
+
       </nav>
     </header>
   );
 };
 
 export default Header;
-
-
-
-
-
-
-
-
-
