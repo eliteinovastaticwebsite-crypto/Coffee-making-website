@@ -692,3 +692,116 @@ body {
     display: none;
   }
 }
+/* ================================
+   EXTRA MOBILE RESPONSIVE FIXES
+   (Add this at the bottom only)
+================================ */
+
+/* Small devices (phones) */
+@media (max-width: 576px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Banner height fix */
+  .single-banner-wrapper {
+    height: auto !important;
+  }
+
+  .single-banner-image {
+    height: auto;
+  }
+
+  /* Intro section */
+  .products-intro {
+    padding: 40px 15px 20px;
+  }
+
+  .products-intro h2 {
+    font-size: 1.5rem !important;
+  }
+
+  /* Product cards */
+  .product-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-card img {
+    height: auto;
+  }
+
+  .card-overlay {
+    position: relative;
+    padding: 20px;
+  }
+
+  /* Centers all grids */
+  .product-showcase,
+  .solutions-grid,
+  .machines-grid-home,
+  .bestsellers-grid,
+  .testimonials-grid,
+  .blog-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* Cards take full width */
+  .solution-card,
+  .machine-card-home,
+  .bestseller-card,
+  .testimonial-card,
+  .blog-card {
+    width: 100% !important;
+    max-width: 95%;
+  }
+
+  /* Machines & bestsellers image fix */
+  .machine-card-home img,
+  .bestseller-card img {
+    height: auto;
+  }
+
+  /* Contact form */
+  .contact-form-section {
+    padding: 0 15px;
+  }
+
+  .home-contact-form input,
+  .home-contact-form textarea {
+    border-radius: 25px;
+  }
+
+  /* Headings smaller */
+  h1, h2 {
+    font-size: 1.5rem !important;
+  }
+
+  /* Fix button width */
+  .view-products-btn,
+  .submit-contact-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/* Tablet adjustments */
+@media (max-width: 992px) {
+
+  .product-card {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .solution-card,
+  .machine-card-home,
+  .bestseller-card,
+  .testimonial-card,
+  .blog-card {
+    width: 100%;
+    max-width: 450px;
+  }
+}
