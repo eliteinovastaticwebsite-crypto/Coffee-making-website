@@ -238,4 +238,142 @@ section {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(212, 164, 90, 0.4);
 }
+/* ---------------- MOBILE RESPONSIVE ---------------- */
+
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .established-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .side-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .cup-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .process-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .process-img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .products-grid.three-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products-grid.five-col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .products-grid.two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .hero-text-box h1 {
+    font-size: 30px;
+  }
+
+  .hero-section {
+    padding: 20px;
+  }
+
+  .established-section {
+    padding: 20px;
+  }
+
+  .established-para {
+    font-size: 16px;
+  }
+
+  .process-note {
+    font-size: 14px;
+  }
+
+  .products-grid.three-col {
+    grid-template-columns: 1fr;
+  }
+
+  .products-grid.five-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .powder-cup-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .powder-img {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .contact-section {
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text-box h1 {
+    font-size: 24px;
+  }
+
+  .hero-text-box p {
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .process-img {
+    max-width: 250px;
+  }
+
+  .products-grid.five-col {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card img {
+    width: 150px;
+    height: auto;
+  }
+
+  .coffee-info {
+    font-size: 13px;
+  }
+
+  .contact-title {
+    font-size: 24px;
+  }
+}
 

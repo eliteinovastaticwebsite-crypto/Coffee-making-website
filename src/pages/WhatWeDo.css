@@ -511,3 +511,67 @@ body {
     font-size: 1.8rem;
   }
 }
+/* ===== EXTRA MOBILE RESPONSIVENESS (ADD ONLY) ===== */
+
+@media (max-width: 768px) {
+
+  /* Make layouts stack properly */
+  .content-block,
+  .team-content,
+  .south-india-content,
+  .brewing-section {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  /* Ensure images don’t overflow */
+  .content-image,
+  .team-image,
+  .south-india-image,
+  .what-hero-image,
+  .medium-brewing-image {
+    width: 100% !important;
+    max-width: 90% !important;
+    height: auto !important;
+  }
+
+  /* Center text properly */
+  .content-text,
+  .team-text,
+  .south-india-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .content-text p,
+  .team-text p,
+  .south-india-text p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Reduce section paddings */
+  .content-section,
+  .team-section,
+  .coffee-love-section,
+  .south-india-section,
+  .brewing-section,
+  .what-hero-section {
+    padding: 30px 15px !important;
+  }
+
+  /* Make images scale nicely */
+  .content-image img,
+  .team-image img,
+  .south-india-image img {
+    object-fit: contain;
+  }
+
+  /* Fix small brewing images */
+  .small-brewing-images img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}

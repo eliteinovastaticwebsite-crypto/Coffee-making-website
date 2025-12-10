@@ -342,4 +342,77 @@
     height: 350px;
   }
 }
+/* ---------------- EXTRA MOBILE RESPONSIVENESS ---------------- */
+
+/* Tablet screens */
+@media (max-width: 768px) {
+  .coffee-section {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .sub-menu {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .machine-card img {
+    height: 180px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  .coffee-section {
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .coffee-text {
+    align-items: center;
+  }
+
+  .coffee-text h2,
+  .coffee-text p {
+    text-align: center;
+  }
+
+  .coffee-image img {
+    height: 260px;
+  }
+
+  .machine-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .partner-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partner-card {
+    height: auto;
+    padding: 20px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 400px) {
+  .main-title {
+    font-size: 24px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .sub-menu a {
+    font-size: 14px;
+  }
+
+  .coffee-text h2 {
+    font-size: 24px;
+  }
+}
+
 

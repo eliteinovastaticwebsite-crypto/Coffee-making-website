@@ -628,3 +628,74 @@
     padding: 30px;
   }
 }
+/* ----------- EXTRA MOBILE RESPONSIVE FIXES ----------- */
+@media (max-width: 768px) {
+
+  .manufacturing-hero {
+    height: 45vh;
+  }
+
+  .manufacturing-hero h1 {
+    font-size: 32px;
+    letter-spacing: 3px;
+    padding: 0 10px;
+  }
+
+  .about-images img {
+    width: 100%;
+  }
+
+  .attribute-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .bean-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .plant-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .manufacturing-hero h1 {
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+
+  .about-content h2,
+  .roasting-plant-section h2,
+  .bean-selection-section h2,
+  .key-attributes-section h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .about-content ul li,
+  .plant-info ul li,
+  .bean-item ul li {
+    font-size: 14px;
+  }
+
+  .red-images img {
+    height: auto;
+  }
+
+  .spec-card {
+    padding: 25px 15px;
+  }
+
+  .footer-cup {
+    width: 150px;
+    height: 150px;
+  }
+
+  .footer-logo {
+    width: 120px;
+  }
+}

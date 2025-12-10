@@ -507,3 +507,55 @@
     height: 30px;
   }
 }
+/* --------- EXTRA MOBILE FIXES (OPTIONAL) --------- */
+@media (max-width: 480px) {
+
+  .coffee-machines-page {
+    padding: 30px 4%;
+  }
+
+  .page-title {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .machine-image-box img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+  }
+
+  .machine-name {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .contact-section {
+    padding: 50px 4%;
+  }
+
+  .contact-form {
+    gap: 15px;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 14px;
+  }
+
+  .footer-cup {
+    width: 120px;
+    height: 120px;
+  }
+}

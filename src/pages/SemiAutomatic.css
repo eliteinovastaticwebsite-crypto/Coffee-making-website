@@ -507,3 +507,131 @@
     height: 30px;
   }
 }
+/* ================= MOBILE RESPONSIVE ADDITIONS ONLY ================= */
+
+@media (max-width: 768px) {
+
+  /* Global padding fix */
+  .coffee-machines-page {
+    padding: 20px 15px;
+  }
+
+  /* Titles */
+  .page-title {
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  /* Product Grid -> Single Column */
+  .machines-grid,
+  .powder-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Card Sizes */
+  .machine-image-box {
+    height: auto;
+    padding: 20px;
+  }
+
+  .machine-image-box img {
+    width: 100%;
+    height: auto;
+    max-width: 280px;
+  }
+
+  .machine-name {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  /* Section Titles */
+  .section-title-large {
+    font-size: 22px;
+    margin: 40px 0 25px;
+  }
+
+  /* Logos Wrap Better */
+  .platform-logos {
+    gap: 20px;
+  }
+
+  .platform-logos .logo {
+    height: 30px;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 40px 15px;
+  }
+
+  .contact-title {
+    font-size: 24px;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    max-width: 280px;
+    margin: auto;
+  }
+
+  /* Footer Layout */
+  .footer-overlay {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-cup {
+    width: 140px;
+    height: 140px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .page-title {
+    font-size: 22px;
+  }
+
+  .machine-image-box img {
+    max-width: 240px;
+  }
+
+  .machine-desc {
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 12px 30px;
+  }
+}
