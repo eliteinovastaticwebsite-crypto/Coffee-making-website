@@ -516,3 +516,92 @@
     font-size: 32px;
   }
 }
+/* ================== EXTRA MOBILE RESPONSIVE FIXES ================== */
+
+/* Small Tablets */
+@media (max-width: 900px) {
+  .fs-hero-banner {
+    width: 100%;
+    padding: 50px 5%;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .fs-banner-image img {
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+  }
+
+  .fs-world-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .fs-world-image img {
+    max-width: 100%;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+  .fs-hero-banner {
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .fs-banner-content h1 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .fs-banner-content p {
+    font-size: 15px;
+  }
+
+  .fs-world-coffee h2,
+  .fs-products-section h2 {
+    font-size: 28px;
+  }
+
+  .fs-product-category h3 {
+    font-size: 22px;
+  }
+
+  .fs-machines-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .fs-machine-item {
+    max-width: 100%;
+  }
+
+  .fs-machine-box {
+    height: auto;
+    min-height: 320px;
+  }
+
+  .fs-machine-front,
+  .fs-machine-back {
+    padding: 20px;
+  }
+
+  .fs-experience-section {
+    padding: 50px 20px;
+  }
+
+  .fs-experience-content h2 {
+    font-size: 26px;
+  }
+}
+
+/* Extra Small Phones */
+@media (max-width: 400px) {
+  .fs-banner-content h1 {
+    font-size: 22px;
+  }
+
+  .fs-explore-btn {
+    width: 100%;
+  }
+}

@@ -521,3 +521,115 @@
   gap: 30px;
   padding: 20px;
 }
+/* ---------------- EXTRA MOBILE RESPONSIVE FIXES ---------------- */
+
+/* Small tablets & large phones */
+@media (max-width: 768px) {
+  .coffee-machines-page {
+    padding: 20px 15px;
+  }
+
+  .machines-grid,
+  .powder-grid {
+    padding: 0 10px;
+  }
+
+  .machine-item {
+    padding: 5px;
+  }
+
+  .machine-image-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .availability-section {
+    padding: 20px 10px;
+  }
+
+  .contact-section {
+    padding: 40px 15px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .footer-section {
+    padding: 40px 15px 20px;
+  }
+
+  .footer-overlay {
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    gap: 10px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .coffee-machines-page {
+    padding: 15px 10px;
+  }
+
+  .page-title {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .machine-name {
+    font-size: 14px;
+    min-height: auto;
+  }
+
+  .machine-image-box {
+    max-width: 100%;
+  }
+
+  .order-btn {
+    width: 100%;
+    max-width: 200px;
+    font-size: 14px;
+  }
+
+  .platform-logos {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-logo {
+    width: 100px;
+  }
+
+  .footer-cup {
+    width: 120px;
+    height: 120px;
+  }
+
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .page-title {
+    font-size: 20px;
+  }
+
+  .section-title-large {
+    font-size: 18px;
+  }
+
+  .contact-title {
+    font-size: 22px;
+  }
+}
+

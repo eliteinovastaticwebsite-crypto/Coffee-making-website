@@ -133,6 +133,94 @@
   border-radius: 8px;
   text-align: center;
 }
+/* ================= MOBILE RESPONSIVENESS (ADD ONLY) ================= */
+
+@media (max-width: 1024px) {
+  .content-wrapper {
+    width: 90%;
+  }
+
+  .form-section {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    width: 95%;
+  }
+
+  .form-section {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .info-row {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .branch-slider-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .arrow-btn {
+    display: none; /* hide arrows on mobile */
+  }
+
+  .branch-scroll {
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .branches-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 30px 10px;
+  }
+
+  .form-section {
+    padding: 20px;
+  }
+
+  .form-section h2 {
+    font-size: 20px;
+  }
+
+  .info-row div h4 {
+    font-size: 13px;
+  }
+
+  .info-row div p {
+    font-size: 14px;
+  }
+
+  .branch-pill {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+
+  .form-section button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .branches-title {
+    font-size: 18px;
+  }
+
+  .branch-pill {
+    font-size: 13px;
+  }
+}
+
 
 
 

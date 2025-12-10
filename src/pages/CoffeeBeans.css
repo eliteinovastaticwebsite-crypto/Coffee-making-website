@@ -507,3 +507,118 @@
     height: 30px;
   }
 }
+/* --------- EXTRA MOBILE RESPONSIVE FIX (DO NOT REMOVE EXISTING CSS) --------- */
+
+/* Phones - Small devices */
+@media (max-width: 480px) {
+  .coffee-machines-page {
+    padding: 20px 4%;
+  }
+
+  .page-title {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .machines-grid,
+  .powder-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  .machine-image-box {
+    height: auto;
+    padding: 15px;
+  }
+
+  .machine-image-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .machine-name {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .section-title-large {
+    font-size: 22px;
+    margin: 40px 0 25px;
+  }
+
+  .contact-section {
+    padding: 40px 5%;
+  }
+
+  .contact-title {
+    font-size: 24px;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+
+  .footer-section {
+    padding: 40px 4% 20px;
+  }
+
+  .footer-overlay {
+    grid-template-columns: 1fr !important;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    width: 100px;
+    margin: 0 auto;
+  }
+
+  .footer-cup {
+    width: 120px;
+    height: 120px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+  .page-title {
+    font-size: 22px;
+  }
+
+  .contact-title {
+    font-size: 22px;
+  }
+
+  .machine-image-box {
+    padding: 10px;
+  }
+}

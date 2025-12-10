@@ -492,3 +492,66 @@ body {
     font-size: 1.8rem;
   }
 }
+/* ================= EXTRA MOBILE RESPONSIVE FIXES (ADD ONLY) ================= */
+
+@media (max-width: 768px) {
+
+  /* Force column stacking */
+  .about-hero-section,
+  .since-section,
+  .tradition-section {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  /* Image containers full width */
+  .about-hero-image,
+  .since-image,
+  .large-image {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Prevent overflow from wide cards */
+  .vision-grid,
+  .process-grid {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .vision-card,
+  .process-card {
+    width: 100% !important;
+    max-width: 95% !important;
+  }
+
+  .process-section,
+  .vision-section,
+  .since-section,
+  .tradition-section {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  /* Fix text overflow */
+  p, h1, h2, h3, h4 {
+    word-break: break-word !important;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Smaller heading sizes for very small screens */
+  h1 { font-size: 1.6rem !important; }
+  h2 { font-size: 1.4rem !important; }
+
+  .tradition-text-box {
+    height: auto !important;
+    min-height: 220px;
+  }
+
+  .tradition-text-box h2 {
+    font-size: 1.5rem !important;
+  }
+}

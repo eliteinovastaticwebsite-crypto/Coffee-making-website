@@ -292,3 +292,98 @@
     padding: 50px 5%;
   }
 }
+/* ================= MOBILE RESPONSIVE (ADD ONLY) ================= */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  .factory-hero-content {
+    grid-template-columns: 1fr;
+  }
+
+  .factory-hero-image img {
+    height: 350px;
+  }
+
+  .glimpses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .factory-hero-banner {
+    padding: 50px 20px;
+  }
+
+  .factory-hero-text {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .factory-hero-text h1 {
+    font-size: 32px;
+  }
+
+  .factory-hero-text p {
+    font-size: 17px;
+  }
+
+  .factory-main-text,
+  .factory-sub-text {
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .factory-features {
+    text-align: left;
+  }
+
+  .glimpses-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .glimpses-grid img {
+    height: 180px;
+  }
+
+  .contact-section {
+    padding: 50px 20px;
+  }
+
+  .contact-title {
+    font-size: 28px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 14px;
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .factory-hero-text h1 {
+    font-size: 26px;
+  }
+
+  .factory-hero-text p {
+    font-size: 15px;
+  }
+
+  .factory-glimpses h2 {
+    font-size: 26px;
+  }
+
+  .glimpses-grid img {
+    height: 160px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}

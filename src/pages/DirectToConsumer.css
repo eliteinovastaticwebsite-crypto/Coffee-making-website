@@ -373,3 +373,81 @@ body {
     height: 250px;
   }
 }
+/* ================= MOBILE RESPONSIVE ADDITIONS ================= */
+
+/* Tablets & small laptops */
+@media (max-width: 768px) {
+  .content-wrapper {
+    width: 90%;
+  }
+
+  .form-section {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .info-row {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .branch-slider-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .arrow-btn {
+    display: none;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 30px 10px;
+  }
+
+  .content-wrapper {
+    width: 95%;
+  }
+
+  .form-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .branch-pill {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .brew-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .brew-image {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -263,5 +263,107 @@
     width: 100px;
   }
 }
+/* ---------- EXTRA MOBILE RESPONSIVE FIXES (DO NOT CHANGE EXISTING CODE) ---------- */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+
+  .coffee-machines-page {
+    padding: 30px 4%;
+  }
+
+  .machines-grid,
+  .powder-grid {
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .machine-image-box {
+    height: 260px;
+    padding: 35px;
+  }
+
+  .platform-logos {
+    gap: 25px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+
+  .coffee-machines-page {
+    padding: 20px 3%;
+  }
+
+  .machines-grid,
+  .powder-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 10px;
+  }
+
+  .machine-item {
+    max-width: 100%;
+  }
+
+  .machine-image-box {
+    height: 230px;
+    padding: 25px;
+  }
+
+  .machine-name {
+    font-size: 16px;
+  }
+
+  .machine-desc {
+    font-size: 14px;
+  }
+
+  .availability-section {
+    margin-top: 40px;
+  }
+
+  .platform-logos {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-section {
+    padding: 50px 20px;
+  }
+
+  .footer-section {
+    padding: 40px 20px 15px;
+  }
+}
+
+/* Small Mobile View */
+@media (max-width: 480px) {
+
+  .coffee-machines-page {
+    padding: 15px 10px;
+  }
+
+  .machine-image-box {
+    height: 200px;
+    padding: 20px;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+
+  .section-title-large {
+    font-size: 20px;
+  }
+
+  .order-btn {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
 
 
