@@ -6,3 +6,20 @@
   font-size: 14px;
   color: #333;
 }
+/* ---------- Mobile Responsive (ADD ONLY) ---------- */
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 12px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
