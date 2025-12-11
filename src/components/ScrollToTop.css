@@ -1,0 +1,61 @@
+/* Aesthetic Scroll-to-Top Button (Black & Brown Theme) */
+.scroll-up-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 55px;
+  height: 55px;
+
+  /* NEW COLORS */
+  background: rgba(45, 28, 23, 0.7); /* deep brown-black */
+  color: #f5e6d3; /* creamy light coffee text */
+  border: 2px solid rgba(139, 69, 19, 0.4); /* soft brown border */
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+  transition: all 0.3s ease;
+  opacity: 0.9;
+
+  animation: floatPulse 3s infinite ease-in-out;
+}
+
+.scroll-up-btn:hover {
+  transform: translateY(-6px) scale(1.1);
+
+  /* Hover colors more bold */
+  background: rgba(95, 58, 45, 0.85); /* lighter brown */
+  border-color: rgba(160, 82, 45, 0.7); /* richer brown */
+  color: #ffffff;
+  
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.45);
+  opacity: 1;
+}
+
+/* Floating animation */
+@keyframes floatPulse {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .scroll-up-btn {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    bottom: 20px;
+    right: 20px;
+    animation: floatPulse 3.5s infinite ease-in-out;
+  }
+}

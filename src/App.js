@@ -22,10 +22,15 @@ import PublicLocation from "./pages/PublicLocation";
 import AboutUs from "./pages/AboutUs";
 import WhatWeDo from "./pages/WhatWeDo";
 
+import ScrollToTop from "./components/ScrollToTop"; // ✅ NEW
+
 export default function App() {
   return (
     <div className="site">
       <Header />
+
+      {/* ✅ Scroll button outside Routes */}
+      <ScrollToTop />
 
       <main>
         <Routes>
@@ -44,15 +49,13 @@ export default function App() {
           <Route path="/coffee-accessories" element={<CoffeeAccessories />} />
           <Route path="/coffee-solutions" element={<OfficeCoffeeSolutions />} /> 
 
-          {/* Manufacturing, Factory, and R&D routes */}
           <Route path="/manufacturing" element={<ManufacturingPage />} />
           <Route path="/factory" element={<FactoryPage />} />
           <Route path="/research-development" element={<ResearchDevelopmentPage />} />
 
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/about" element={<AboutUs />} />
-          <Route path="what-we-do" element={<WhatWeDo />} />
-
+          <Route path="/what-we-do" element={<WhatWeDo />} />
         </Routes>
       </main>
 
